@@ -191,4 +191,4 @@ class LikeView(APIView):
         except Like.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
         like.delete()
-        return Response({"comment":"deleted"})
+        return Response({"like":"deleted"})
